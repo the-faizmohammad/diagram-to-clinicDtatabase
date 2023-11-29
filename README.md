@@ -18,10 +18,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Vet Clinic <a name="about-project"></a>
+# 📖 Medical Clinic <a name="about-project"></a>
 
 
-**Vet Clinic** is a database project to build a relational database based on a real-life example.
+**Medical Clinic** is a database project to build a relational database based on a real-life example.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -134,7 +134,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/the-faizmohammad/diagram-to-clinicDtatabase/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
