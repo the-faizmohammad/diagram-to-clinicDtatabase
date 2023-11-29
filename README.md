@@ -134,7 +134,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/brighton0102/vet-clinic/issues).
+Feel free to check the [issues page]().
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,7 +160,7 @@ Feel free to check the [issues page](https://github.com/brighton0102/vet-clinic/
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/brighton0102/vet-clinic/blob/dev/LICENSE) licensed.
+This project is [MIT](https://github.com/the-faizmohammad/diagram-to-clinicDtatabase/blob/development/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
