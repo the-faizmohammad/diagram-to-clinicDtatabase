@@ -37,3 +37,17 @@ CREATE TABLE IF NOT EXISTS invoices (
     PRIMARY KEY(id),
     CONSTRAINT fk_medical_history_id FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id)
 );
+
+-- Create the invoice_items table
+CREATE TABLE IF NOT EXISTS invoice_items (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    unit_price DECIMAL(10, 2),
+    quantity INT,
+    total_price DECIMAL(10, 2),
+    invoice_id INT,
+    treatment_id INT,
+    PRIMARY KEY(id),
+    CONSTRAINT fk_invoice_id FOREIGN KEY(invoice_id) REFERENCES invoices(id),
+    CONSTRAINT fk_treatment_id FOREIGN KEY(treatment_id) REFERENCES treatments(id)
+);
+
