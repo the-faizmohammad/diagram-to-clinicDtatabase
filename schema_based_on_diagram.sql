@@ -51,3 +51,20 @@ CREATE TABLE IF NOT EXISTS invoice_items (
     CONSTRAINT fk_treatment_id FOREIGN KEY(treatment_id) REFERENCES treatments(id)
 );
 
+-- Create the treatments_histories table for the many-to-many relationship
+CREATE TABLE IF NOT EXISTS treatments_histories (
+    id INT GENERATED ALWAYS AS IDENTITY,
+    medical_history_id INT,
+    treatment_id INT,
+    PRIMARY KEY(id),
+    CONSTRAINT fk_medical_history_id FOREIGN KEY(medical_history_id) REFERENCES medical_histories(id),
+    CONSTRAINT fk_treatment_id FOREIGN KEY(treatment_id) REFERENCES treatments(id)
+);
+
+-- Create Indexes
+CREATE INDEX IF NOT EXISTS idx_medical_histories_patient_id ON medical_histories (patient_id);
+CREATE INDEX IF NOT EXISTS idx_invoices_medical_history_id ON invoices (medical_history_id);
+CREATE INDEX IF NOT EXISTS idx_invoice_items_invoice_id ON invoice_items (invoice_id);
+CREATE INDEX IF NOT EXISTS idx_invoice_items_treatment_id ON invoice_items (treatment_id);
+CREATE INDEX IF NOT EXISTS idx_treatments_histories_medical_history_id ON treatments_histories(medical_history_id);
+CREATE INDEX IF NOT EXISTS idx_treatments_histories_treatment_id ON treatments_histories(treatment_id);
